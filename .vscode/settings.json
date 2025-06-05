@@ -1,0 +1,21 @@
+{
+  // Copy of ".editorconfig" settings
+  "files.encoding": "utf8", // charset
+  "files.insertFinalNewline": true, // insert_final_newline
+  "files.trimTrailingWhitespace": true, // trim_trailing_whitespace
+  "files.eol": "\n", // end_of_line
+  "editor.insertSpaces": true, // indent_style
+  "editor.tabSize": 2, // indent_size
+  "editor.wordWrapColumn": 80, // max_line_length
+  "[markdown]": { "files.trimTrailingWhitespace": false }, // trim_trailing_whitespace for Markdowns
+
+  // Code Format
+  "editor.formatOnSave": true, // Format on save
+  "deno.enable": true, // Deno intellesense
+  "[html][css][scss][javascript][javascriptreact][typescript][typescriptreact][json][jsonc][dockercompose]": {
+    "editor.defaultFormatter": "denoland.vscode-deno" // "Deno formatter"
+  },
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": { "source.organizeImports": "explicit" } // Organize imports automatically
+  }
+}
