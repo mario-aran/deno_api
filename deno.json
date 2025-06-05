@@ -1,0 +1,24 @@
+{
+  "fmt": {
+    "ignore": ["deno.lock"],
+    "newlineStyle": "lf",
+    "indentWidth": 2,
+    "lineWidth": 80,
+    "useTabs": false,
+    "singleQuote": true
+  },
+  "tasks": {
+    "clean:all": "sh -c \"rm -f deno.lock\"",
+    "install": "deno install --allow-scripts",
+    "update": "deno outdated --update --latest",
+    "format": "deno fmt",
+    "lint": "deno lint --fix",
+    "dev": "deno run --allow-net --allow-read --allow-env --watch src/index.ts",
+    "start": "deno run --allow-net --allow-read --allow-env --cached-only src/index.ts"
+  },
+  "imports": {
+    "mongoose": "npm:mongoose@^8.15.1",
+    "oak/": "https://deno.land/x/oak@v12.4.0/",
+    "dotenv/": "https://deno.land/std@0.203.0/dotenv/"
+  }
+}
