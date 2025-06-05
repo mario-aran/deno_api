@@ -1,12 +1,4 @@
 {
-  "fmt": {
-    "ignore": ["deno.lock"],
-    "newlineStyle": "lf",
-    "indentWidth": 2,
-    "lineWidth": 80,
-    "useTabs": false,
-    "singleQuote": true
-  },
   "tasks": {
     "clean:all": "sh -c \"rm -f deno.lock\"",
     "install": "deno install --allow-scripts",

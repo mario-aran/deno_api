@@ -3,7 +3,7 @@ services:
     image: mongo:8
     restart: unless-stopped
     ports:
-      - '27017:27017'
+      - "27017:27017"
     volumes:
       - mongo-config:/data/configdb
       - mongo-data:/data/db
@@ -15,7 +15,7 @@ services:
     image: mongo-express:1-18-alpine3.18
     restart: unless-stopped
     ports:
-      - '8081:8081'
+      - "8081:8081"
     environment:
       - ME_CONFIG_MONGODB_URL=mongodb://username:password@mongo:27017/
       - ME_CONFIG_BASICAUTH=false
