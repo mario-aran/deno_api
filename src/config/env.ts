@@ -1,4 +1,4 @@
-import { load } from "https://deno.land/std@0.203.0/dotenv/mod.ts";
+import { load } from "dotenv/mod.ts";
 
 // Load environment variables
 await load({ envPath: "./.env", export: true });

@@ -12,7 +12,7 @@
   // Code Format
   "editor.formatOnSave": true, // Format on save
   "deno.enable": true, // Deno intellesense
-  "[html][css][scss][javascript][javascriptreact][typescript][typescriptreact][json][jsonc][dockercompose]": {
+  "[html][css][scss][javascript][javascriptreact][typescript][typescriptreact][json][jsonc][dockercompose][markdown]": {
     "editor.defaultFormatter": "denoland.vscode-deno" // "Deno formatter"
   },
   "[javascript][javascriptreact][typescript][typescriptreact]": {
